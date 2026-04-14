@@ -1,5 +1,11 @@
 #hexagon {
+<<<<<<< HEAD
   display: block;
+=======
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+>>>>>>> 1fba0f19dde90f83d279d04e7cff1954c1267bfb
 }
 
 .hexagonInput {
@@ -12,7 +18,11 @@
 }
 
 #hexagonMap {
+<<<<<<< HEAD
   width: 100%;
+=======
+  flex: 1;
+>>>>>>> 1fba0f19dde90f83d279d04e7cff1954c1267bfb
   min-height: 500px;
 }
 
