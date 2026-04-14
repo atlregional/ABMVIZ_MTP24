@@ -155,9 +155,10 @@
       updateLegend(breaks);
 
       var map = L.map(containerID).setView([33.792902, -84.349885], 10);
-      L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-        attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-        maxZoom: 16
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors',
+        maxZoom: 19,
+        subdomains: ['a', 'b', 'c']
       }).addTo(map);
       map.addControl(new L.Control.Fullscreen());
 
